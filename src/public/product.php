@@ -8,4 +8,4 @@ session_start();
 
 $productController = new ProductController();
 
-$productController->index();
+$productController->show($_GET['productCode']);
