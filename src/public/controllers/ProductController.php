@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once 'public/db/Database.php';
+require_once 'db/Database.php';
 
 class ProductController
 {
@@ -23,9 +23,9 @@ class ProductController
             $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             // 3 - Affichage de la liste des produits
-            include 'public/views/layout/header.view.php';
-            include 'public/views/index.view.php';
-            include 'public/views/layout/footer.view.php';
+            include 'views/layout/header.view.php';
+            include 'views/index.view.php';
+            include 'views/layout/footer.view.php';
         } catch (Exception $e) {
             print_r($e->getMessage());
         }
@@ -46,9 +46,9 @@ class ProductController
             }
 
             // 3 - Afficher la page
-            include 'public/views/layout/header.view.php';
-            include 'public/views/product.view.php';
-            include 'public/views/layout/footer.view.php';
+            include 'views/layout/header.view.php';
+            include 'views/product.view.php';
+            include 'views/layout/footer.view.php';
         } catch (Exception $e) {
             print_r($e->getMessage());
         }

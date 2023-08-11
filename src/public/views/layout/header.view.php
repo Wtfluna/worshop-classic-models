@@ -18,10 +18,10 @@
             <ul>
                 <?php if (!empty($_SESSION['user'])) : ?>
                     Bonjour <?= $_SESSION['user']['username'] ?>
-                    <li><a href="/logout.php">Logout</a></li>
+                    <li><a href="/logout">Logout</a></li>
                 <?php else : ?>
-                    <li><a href="/login.php">Login</a></li>
-                    <li><a href="/register.php">Register</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
                 <?php endif; ?>
             </ul>
         </nav>
